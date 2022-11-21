@@ -1,0 +1,135 @@
+[
+    {
+        "service_id": "01",
+        "title": "Architectural portfolio",
+        "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4ce377137796763.62117c26a0305.jpg",
+        "price": "700.00",
+        "description": "I will design your presentations in format of architectural sheets,photo edits, brochure, banners, power point presentation & video presentations.I have gathered enormous experiences in this sector as a professional, working under different studios for 7 years. So, be confident that I will happily ensure designing your dream into presentations.",
+        "ratings" : "4.9",
+        "facility": [
+            {
+                "name": "Fast Delivery",
+                "details": "Time is money, money is time, the faster we deliver the more you make."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Happiness is a by-product of an effort to make someone else happy."
+            },
+            {
+                "name": "Money Back Guarantee",
+                "details": "If you are not satisfied of your desire please raise a return request"
+            }
+        ]
+    },
+    {
+        "service_id": "02",
+        "title": "Home interior",
+        "img": "https://wallpapercave.com/dwp1x/wp10822313.jpg",
+        "price": "600.00",
+        "description": "I will design your home/house/apartment/villa interior design (bedroom,child bed,living room,dinning,kitchen,family living,toilet,couch etc)and develop 3D models, including realistic image renders in fastest time & I will provide high quality work.Softwares like AutoCAD, Sketchup, Lumion, 3d MAX, Adobe Photoshop, premiere pro, Vray are used.",
+        "ratings" : "4.8",
+        "facility": [
+            {
+                "name": "Fast Delivery",
+                "details": "Time is money, money is time, the faster we deliver the more you make."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Happiness is a by-product of an effort to make someone else happy."
+            },
+            {
+                "name": "Money Back Guarantee",
+                "details": "If you are not satisfied of your desire please raise a return request"
+            }
+        ]
+    },
+    {
+        "service_id": "03",
+        "title": "Office interior design",
+        "img": "https://wallpapercave.com/dwp1x/wp9530187.png",
+        "price": "500.00",
+        "description": "I will design your OFFICE,WORKPLACE,STUDIO,MEETING ROOM,RECEPTION AREA( interior) and develop 3D models, including realistic image renders in fastest time & I will provide high quality work.Interior design of any commercial space ,office,work station,retail shop,reception.house.apartment,lobby,hotel, etc",
+        "ratings" : "4.9",
+        "facility": [
+            {
+                "name": "Fast Delivery",
+                "details": "Time is money, money is time, the faster we deliver the more you make."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Happiness is a by-product of an effort to make someone else happy."
+            },
+            {
+                "name": "Money Back Guarantee",
+                "details": "If you are not satisfied of your desire please raise a return request"
+            }
+        ]
+    },
+    {
+        "service_id": "04",
+        "title": "Urban sketch and concept Hand drawing",
+        "img": "https://img.freepik.com/free-vector/hand-draw-city-skyline-sketch_1035-20493.jpg?w=2000",
+        "price": "900.00",
+        "description": "I will create a hand drawn architectural ink sketch/drawing/illustration of any building, urban landmark, street scene, man made structure, city scape, landscape scene, and etc BASED on your photos.All drawing will be scanned in high quality in PDF, JPEG, or PNG.",
+        "ratings" : "4.9",
+        "facility": [
+            {
+                "name": "Fast Delivery",
+                "details": "Time is money, money is time, the faster we deliver the more you make."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Happiness is a by-product of an effort to make someone else happy."
+            },
+            {
+                "name": "Money Back Guarantee",
+                "details": "If you are not satisfied of your desire please raise a return request"
+            }
+        ]
+    },
+    {
+        "service_id": "05",
+        "title": "Shop interior design",
+        "img": "https://img.freepik.com/premium-photo/interior-men-s-clothing-store-style-fashion_120897-3074.jpg?w=2000",
+        "price": "700.00",
+        "description": "I will design your SHOP(exterior or interior) and develop 3D models, including realistic image renders in fastest time & I will provide high quality work.I will also develop 3D models of your project.Architectural 3D rendered images will also be provided.2D architectural drawings Plan render, elevation ,section or any drawing in autocad. Softwares like AutoCAD, Sketchup, Lumion, 3d MAX, Adobe Photoshop, Vray are used.",
+        "ratings" : "4.9",
+        "facility": [
+            {
+                "name": "Fast Delivery",
+                "details": "Time is money, money is time, the faster we deliver the more you make."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Happiness is a by-product of an effort to make someone else happy."
+            },
+            {
+                "name": "Money Back Guarantee",
+                "details": "If you are not satisfied of your desire please raise a return request"
+            }
+        ]
+    },
+    {
+        "service_id": "06",
+        "title": "Design interior,exterior and 3d floor plan",
+        "img": "https://www.shonahome.com/wp-content/uploads/2022/02/somalia-5-810x430.jpg",
+        "price": "1300.00",
+        "description": "I can create a 3d floor plan, interior, and exterior for your home, villa, hotel, restaurant, apartment, or office the fastest.I can create other architecture rendering stuff from Interior to exterior alsoThis can help you to manage your real estate selling or interior planning for your home, I use SketchUp and Blender to create the models for the plan",
+        "ratings" : "4.9",
+        "facility": [
+            {
+                "name": "Fast Delivery",
+                "details": "Time is money, money is time, the faster we deliver the more you make."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Happiness is a by-product of an effort to make someone else happy."
+            },
+            {
+                "name": "Money Back Guarantee",
+                "details": "If you are not satisfied of your desire please raise a return request"
+            }
+        ]
+    }
+
+]

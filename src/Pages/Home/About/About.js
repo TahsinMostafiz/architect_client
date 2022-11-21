@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import aboutImg from "../../../assets/images/coverpage/about.jpg";
 const About = () => {
   return (
@@ -17,12 +16,12 @@ const About = () => {
             according to your needs.
           </p>
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <Link
-              to="#contact"
+            <a
+              href="#contact"
               className="px-8 py-3 text-lg font-semibold rounded bg-yellow-400 text-white"
             >
               Contact
-            </Link>
+            </a>
           </div>
         </div>
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 relative">
