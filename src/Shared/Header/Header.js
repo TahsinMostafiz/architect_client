@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => {
+        toast.error(error.message);
+      });
+  };
   return (
     <div>
       <header className="p-4 bg-gray-800 text-gray-100">
@@ -33,10 +44,29 @@ const Header = () => {
             </li>
           </ul>
           <div className="items-center flex-shrink-0 hidden lg:flex">
-            <button className="self-center px-8 py-3 rounded">Sign in</button>
-            <button className="self-center px-8 py-3 font-semibold rounded bg-yellow-400 text-gray-900">
-              Sign up
-            </button>
+            {user?.email ? (
+              <>
+                <button
+                  onClick={handleLogOut}
+                  className="self-center px-8 py-3 font-semibold rounded bg-yellow-400 text-gray-900"
+                >
+                  Log Out
+                </button>
+              </>
+            ) : (
+              <>
+                <Link to="/login">
+                  <button className="self-center px-8 py-3 rounded">
+                    Sign in
+                  </button>
+                </Link>
+                <Link to="/register">
+                  <button className="self-center px-8 py-3 font-semibold rounded bg-yellow-400 text-gray-900">
+                    Sign up
+                  </button>
+                </Link>
+              </>
+            )}
           </div>
           <button className="p-4 lg:hidden">
             <svg
