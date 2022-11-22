@@ -46,7 +46,7 @@ const ServicesCard = ({ service }) => {
         </div>
 
         <div className="card-actions">
-          <Link to={`/checkout/${_id}`}>
+          <Link to={`/details/${_id}`}>
             <button className="btn btn-warning text-white">view details</button>
           </Link>
         </div>

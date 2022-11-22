@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import ServicesCard from "./ServicesCard";
 
-const Service = () => {
+const ServicesSection = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("myServices.json")
+    fetch("http://localhost:5000/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -20,15 +21,19 @@ const Service = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service) => (
-            <ServicesCard
-              key={service.service_id}
-              service={service}
-            ></ServicesCard>
+            <ServicesCard key={service._id} service={service}></ServicesCard>
           ))}
+        </div>
+        <div className="text-center py-10">
+          <Link to="/services">
+            <button className="self-center px-8 py-3 font-semibold rounded bg-yellow-400 text-white">
+              See All
+            </button>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default Service;
+export default ServicesSection;

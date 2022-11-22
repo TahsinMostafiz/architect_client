@@ -20,6 +20,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        toast.success("Log In Successfully");
         form.reset();
         navigate(from, { replace: true });
       })

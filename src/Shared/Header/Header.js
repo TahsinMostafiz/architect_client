@@ -29,15 +29,23 @@ const Header = () => {
             <li className="flex">
               <Link
                 to="/home"
-                className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-yellow-400 border-yellow-400"
+                className="flex items-center px-4 -mb-1 hover:text-yellow-400"
               >
                 Home
               </Link>
             </li>
             <li className="flex">
               <Link
+                to="/services"
+                className="flex items-center px-4 -mb-1 hover:text-yellow-400"
+              >
+                Services
+              </Link>
+            </li>
+            <li className="flex">
+              <Link
                 to="/blog"
-                className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+                className="flex items-center px-4 -mb-1 hover:text-yellow-400"
               >
                 Blog
               </Link>
