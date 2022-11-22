@@ -50,6 +50,26 @@ const Header = () => {
                 Blog
               </Link>
             </li>
+            {user?.email && (
+              <>
+                <li className="flex">
+                  <Link
+                    to="/myReviews"
+                    className="flex items-center px-4 -mb-1 hover:text-yellow-400"
+                  >
+                    My Reviews
+                  </Link>
+                </li>
+                <li className="flex">
+                  <Link
+                    to="/addService"
+                    className="flex items-center px-4 -mb-1 hover:text-yellow-400"
+                  >
+                    Add Service
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
           <div className="items-center flex-shrink-0 hidden lg:flex">
             {user?.email ? (

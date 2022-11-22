@@ -7,6 +7,8 @@ import Services from "../Pages/Home/Services/Services";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivetRoutes from "./PrivetRoutes";
+import MyReview from "../Pages/Home/Services/MyReview";
+import AddService from "../Pages/Home/Services/AddService";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,22 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/services/${params.id}`),
+      },
+      {
+        path: "/myReviews",
+        element: (
+          <PrivetRoutes>
+            <MyReview></MyReview>
+          </PrivetRoutes>
+        ),
+      },
+      {
+        path: "/addService",
+        element: (
+          <PrivetRoutes>
+            <AddService></AddService>
+          </PrivetRoutes>
+        ),
       },
     ],
   },
