@@ -5,6 +5,7 @@ import { FaStar, FaStarHalf } from "react-icons/fa";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import contactImg from "../../../assets/images/coverpage/mesege.jpg";
 import toast from "react-hot-toast";
+import ReviewsSection from "./ReviewsSection";
 
 const ServiceDetails = () => {
   const { title, img, price, description, facility, _id } = useLoaderData();
@@ -183,6 +184,8 @@ const ServiceDetails = () => {
         </div>
       </section>
       {/* Reviews Section */}
+      <ReviewsSection></ReviewsSection>
+      {/*Add Reviews Section */}
       <section>
         <div className="bg-white text-gray-800" id="contact">
           <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
