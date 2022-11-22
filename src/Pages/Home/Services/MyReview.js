@@ -32,15 +32,25 @@ const MyReview = () => {
   };
   return (
     <div className="container mx-auto py-10">
-      <div className="grid grid-cols-1 gap-5">
-        {myReviews.map((myReview) => (
-          <MyReviewsCard
-            key={myReview._id}
-            myReview={myReview}
-            handleDelete={handleDelete}
-          ></MyReviewsCard>
-        ))}
-      </div>
+      {myReviews.length === 0 ? (
+        <>
+          <h2 className="text-5xl text-orange-600 text-center">
+            No reviews were added
+          </h2>
+        </>
+      ) : (
+        <>
+          <div className="grid grid-cols-1 gap-5">
+            {myReviews.map((myReview) => (
+              <MyReviewsCard
+                key={myReview._id}
+                myReview={myReview}
+                handleDelete={handleDelete}
+              ></MyReviewsCard>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };
