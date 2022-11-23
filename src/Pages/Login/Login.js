@@ -3,11 +3,14 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import registerImg from "../../assets/images/login/login.jpg";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import toast from "react-hot-toast";
+import useTitle from "../../Hooks/useTitle";
 const Login = () => {
   const { logIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
+
+  useTitle("Login");
 
   // Log In
   const handleLogin = (event) => {
@@ -33,7 +36,6 @@ const Login = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data);
             localStorage.setItem("architect-token", data.token);
             navigate(from, { replace: true });
             toast.success("Log In Successfully");

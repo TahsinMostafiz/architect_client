@@ -35,40 +35,12 @@ const MyReviewsCard = ({ myReview, handleDelete }) => {
         <p>{message}</p>
       </div>
       <div className="flex pt-2">
-        {/* The button to open modal */}
-        <label htmlFor="my-modal-4" className="btn btn-warning text-white">
-          Edit
-        </label>
         <button
           onClick={() => handleDelete(_id)}
           className="btn btn-error text-white ml-3"
         >
           Delete
         </button>
-
-        {/* Put this part before </body> tag */}
-        <input type="checkbox" id="my-modal-4" className="modal-toggle" />
-        <div className="modal cursor-pointer">
-          <div className="modal-box">
-            <div>
-              <label htmlFor="message" className="text-xl text-gray-900">
-                Update Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                rows="3"
-                className="w-full p-3 rounded border-2 border-gray-800"
-              ></textarea>
-            </div>
-            <div className="modal-action">
-              <label htmlFor="my-modal-4" className="btn">
-                Update
-              </label>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

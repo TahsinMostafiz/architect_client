@@ -6,10 +6,12 @@ import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import contactImg from "../../../assets/images/coverpage/mesege.jpg";
 import toast from "react-hot-toast";
 import ReviewsSection from "./ReviewsSection";
+import useTitle from "../../../Hooks/useTitle";
 
 const ServiceDetails = () => {
   const { title, img, price, description, facility, _id } = useLoaderData();
   const { user } = useContext(AuthContext);
+  useTitle("Service Details");
 
   const handleReviews = (event) => {
     event.preventDefault();
@@ -36,6 +38,7 @@ const ServiceDetails = () => {
       method: "POST",
       headers: {
         "content-type": "application/json",
+        authorization: `Bearer ${localStorage.getItem("architect-token")}`,
       },
       body: JSON.stringify(review),
     })

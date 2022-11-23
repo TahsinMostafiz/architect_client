@@ -2,12 +2,15 @@ import React, { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import registerImg from "../../assets/images/login/login.jpg";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
+import useTitle from "../../Hooks/useTitle";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
+
+  useTitle("Sign Up");
 
   //create user
   const handleRegister = (event) => {

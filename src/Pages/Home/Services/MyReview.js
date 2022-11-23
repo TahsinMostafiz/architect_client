@@ -2,10 +2,12 @@ import React, { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import MyReviewsCard from "./MyReviewsCard";
 import toast from "react-hot-toast";
+import useTitle from "../../../Hooks/useTitle";
 
 const MyReview = () => {
   const { user, logOut } = useContext(AuthContext);
   const [myReviews, setMyReviews] = useState([]);
+  useTitle("My Review");
 
   useEffect(() => {
     fetch(`http://localhost:5000/reviewsByUser?email=${user?.email}`, {
@@ -27,10 +29,12 @@ const MyReview = () => {
     if (proceed) {
       fetch(`http://localhost:5000/reviews/${id}`, {
         method: "DELETE",
+        headers: {
+          authorization: `Bearer ${localStorage.getItem("architect-token")}`,
+        },
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
           if (data.deletedCount > 0) {
             toast.success("Deleted Successfully");
             const remaining = myReviews.filter((review) => review._id !== id);
@@ -39,6 +43,7 @@ const MyReview = () => {
         });
     }
   };
+
   return (
     <div className="container mx-auto py-10">
       {myReviews.length === 0 ? (

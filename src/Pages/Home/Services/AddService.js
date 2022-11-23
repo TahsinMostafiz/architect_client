@@ -2,8 +2,10 @@ import React from "react";
 import contactImg from "../../../assets/images/coverpage/mesege.jpg";
 
 import toast from "react-hot-toast";
+import useTitle from "../../../Hooks/useTitle";
 
 const AddService = () => {
+  useTitle("Add Service");
   const handleAddService = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -46,6 +48,7 @@ const AddService = () => {
       method: "POST",
       headers: {
         "content-type": "application/json",
+        authorization: `Bearer ${localStorage.getItem("architect-token")}`,
       },
       body: JSON.stringify(service),
     })
