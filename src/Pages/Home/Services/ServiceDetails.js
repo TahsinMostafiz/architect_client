@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
-import coverImg from "../../../assets/images/coverpage/cover_img_1.jpg";
+import coverImg from "../../../assets/images/review/review-cover.jpg";
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import contactImg from "../../../assets/images/coverpage/mesege.jpg";
