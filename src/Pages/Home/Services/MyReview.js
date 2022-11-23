@@ -4,14 +4,23 @@ import MyReviewsCard from "./MyReviewsCard";
 import toast from "react-hot-toast";
 
 const MyReview = () => {
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
   const [myReviews, setMyReviews] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/reviewsByUser?email=${user?.email}`)
-      .then((res) => res.json())
+    fetch(`http://localhost:5000/reviewsByUser?email=${user?.email}`, {
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("architect-token")}`,
+      },
+    })
+      .then((res) => {
+        if (res.status === 401 || res.status === 403) {
+          return logOut();
+        }
+        return res.json();
+      })
       .then((data) => setMyReviews(data));
-  }, [user?.email]);
+  }, [user?.email, logOut]);
 
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure? You want to delete");

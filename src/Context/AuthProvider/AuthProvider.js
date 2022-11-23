@@ -35,7 +35,7 @@ const AuthProvider = ({ children }) => {
 
   // log out
   const logOut = () => {
-    setLoading(true);
+    localStorage.removeItem("architect-token");
     return signOut(auth);
   };
 
