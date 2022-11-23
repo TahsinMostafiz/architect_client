@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
-import coverImg from "../../../assets/images/review/review-cover.jpg";
+import coverImg from "../../../assets/images/coverpage/cover_img_1.jpg";
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
-import contactImg from "../../../assets/images/coverpage/mesege.jpg";
+import reviewImg from "../../../assets/images/review/review-cover.jpg";
 import toast from "react-hot-toast";
 import ReviewsSection from "./ReviewsSection";
 import useTitle from "../../../Hooks/useTitle";
@@ -192,7 +192,7 @@ const ServiceDetails = () => {
         <div className="bg-white text-gray-800" id="contact">
           <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
             <div className="flex flex-col justify-between">
-              <img src={contactImg} alt="" className="p-6 " />
+              <img src={reviewImg} alt="" className="p-6 " />
             </div>
             <form
               onSubmit={handleReviews}
