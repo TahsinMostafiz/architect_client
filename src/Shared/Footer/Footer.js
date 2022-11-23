@@ -6,109 +6,52 @@ const Footer = () => {
     <div>
       <footer className="bg-gray-800 text-gray-50 ">
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-3">
+            <div>
+              <span className="self-center text-2xl font-semibold">
+                <Link to="/">Architect</Link>
+              </span>
+            </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
                 Company
               </h2>
               <ul className="text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
-                  <Link to="#" className=" hover:underline">
-                    About
+                  <Link to="/home" className=" hover:underline">
+                    Home
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Careers
+                  <Link to="/services" className="hover:underline">
+                    Services
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Brand Center
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
+                  <Link to="/blog" className="hover:underline">
                     Blog
                   </Link>
                 </li>
               </ul>
             </div>
+
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
-                Help center
-              </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Discord Server
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Twitter
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Facebook
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
-                Legal
-              </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Licensing
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Terms &amp; Conditions
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
-                Download
-              </h2>
-              <ul className="text-gray-500 dark:text-gray-400">
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    iOS
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Android
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    Windows
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link to="#" className="hover:underline">
-                    MacOS
-                  </Link>
-                </li>
-              </ul>
+              <span className="footer-title">Newsletter</span>
+              <div className="form-control w-80">
+                <label className="label">
+                  <span className="label-text">Enter your email address</span>
+                </label>
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="username@site.com"
+                    className="input input-bordered w-full pr-16"
+                  />
+                  <button className="btn btn-warning absolute top-0 right-0 rounded-l-none">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
