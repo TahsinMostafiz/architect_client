@@ -34,7 +34,7 @@ const ServiceDetails = () => {
       photoUrl,
     };
 
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://architect-server.vercel.app/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -44,7 +44,6 @@ const ServiceDetails = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.acknowledged) {
           toast.success("Review placed successfully");
           form.reset();

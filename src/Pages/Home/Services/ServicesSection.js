@@ -5,7 +5,7 @@ import ServicesCard from "./ServicesCard";
 const ServicesSection = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://architect-server.vercel.app/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

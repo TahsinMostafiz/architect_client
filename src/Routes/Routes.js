@@ -49,7 +49,7 @@ const router = createBrowserRouter([
           </PrivetRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(`https://architect-server.vercel.app/services/${params.id}`),
       },
       {
         path: "/myReviews",

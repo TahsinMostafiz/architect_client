@@ -10,11 +10,14 @@ const MyReview = () => {
   useTitle("My Review");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/reviewsByUser?email=${user?.email}`, {
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("architect-token")}`,
-      },
-    })
+    fetch(
+      `https://architect-server.vercel.app/reviewsByUser?email=${user?.email}`,
+      {
+        headers: {
+          authorization: `Bearer ${localStorage.getItem("architect-token")}`,
+        },
+      }
+    )
       .then((res) => {
         if (res.status === 401 || res.status === 403) {
           return logOut();
@@ -27,7 +30,7 @@ const MyReview = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure? You want to delete");
     if (proceed) {
-      fetch(`http://localhost:5000/reviews/${id}`, {
+      fetch(`https://architect-server.vercel.app/reviews/${id}`, {
         method: "DELETE",
         headers: {
           authorization: `Bearer ${localStorage.getItem("architect-token")}`,
