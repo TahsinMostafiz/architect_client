@@ -2,7 +2,7 @@
 
 ## Features :
 
-This is a dynamic website. wen can register a user in this website. we can purchase a service like Architecture and Interior Design services. wen can add review on each service and also Delete review. This is a secure and full authenticated website.
+This is a dynamic website. we can register a user on this website. we can purchase services like Architecture and Interior Design services. we can add reviews on each service and also Delete reviews. This is a secure and fully authenticated website.
 
 ## This Website made by :
 
